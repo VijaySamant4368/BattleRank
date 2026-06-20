@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "BattleRank: Who wins?",
+  title: "PowerScale: Who wins?",
   description:
     "Vote on character matchups you actually know. Crowdsourced Elo rankings across anime, comics, and film.",
   openGraph: {
-    title: "BattleRank",
+    title: "PowerScale",
     description: "Crowdsourced character ranking. Only vote on who you know.",
     type: "website",
   },
@@ -36,10 +36,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                let theme = localStorage.getItem('battlerank-theme');
+                let theme = localStorage.getItem('powerscale-theme');
                 if (!theme) {
                   theme = 'default';
-                  localStorage.setItem('battlerank-theme', theme);
+                  localStorage.setItem('powerscale-theme', theme);
                 }
                 document.documentElement.setAttribute('data-theme', theme);
               } catch (e) {}

@@ -166,7 +166,7 @@ export default function AuthPage() {
         <div className="mb-8 text-center">
           <Link href="/" className="inline-flex items-center gap-2 text-accent mb-6">
             <Swords className="h-4 w-4" />
-            <span className="font-semibold">BattleRank</span>
+            <span className="font-semibold">PowerScale</span>
           </Link>
           <h1 className="text-xl font-bold">Welcome</h1>
           <p className="text-sm text-muted-foreground mt-1">Sign in to vote and rank characters</p>

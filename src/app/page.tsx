@@ -106,7 +106,7 @@ export default async function Home() {
               href="/leaderboard"
               className="flex items-center justify-center gap-2 px-10 py-4 bg-secondary/50 backdrop-blur-md border border-border text-lg font-bold text-foreground hover:bg-secondary/80 transition-all"
             >
-              View Rankings
+              View Leaderboard
             </Link>
           </div>
 
@@ -134,7 +134,7 @@ export default async function Home() {
                 Current top 5
               </h2>
               <Link href="/leaderboard" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
-                Full rankings →
+                Full leaderboard →
               </Link>
             </div>
             <ol className="space-y-2">
@@ -216,7 +216,7 @@ export default async function Home() {
 
       <footer className="border-t border-border py-6 px-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between text-xs text-muted-foreground">
-          <span>BattleRank</span>
+          <span>PowerScale</span>
           <Link href="/submit" className="hover:text-foreground transition-colors">
             Submit a character
           </Link>

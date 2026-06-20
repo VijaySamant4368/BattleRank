@@ -18,7 +18,7 @@ import { ThemeSelector } from "./theme-selector"
 
 const NAV_LINKS = [
   { href: "/arena", label: "Arena" },
-  { href: "/leaderboard", label: "Rankings" },
+  { href: "/leaderboard", label: "Leaderboard" },
   { href: "/submit", label: "Submit" },
 ]
 
@@ -48,7 +48,7 @@ export function Navbar() {
       <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
           <Swords className="h-4 w-4 text-accent" />
-          BattleRank
+          PowerScale
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">

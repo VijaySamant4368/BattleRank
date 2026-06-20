@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!data) return { title: "Character not found" }
 
   return {
-    title: `${data.name} — BattleRank`,
+    title: `${data.name} — PowerScale`,
     description: `${data.name} from ${data.series}. Current Elo: ${data.elo}`,
     openGraph: {
       title: `${data.name} | ${data.series}`,
@@ -65,7 +65,7 @@ export default async function CharacterPage({ params }: Props) {
           className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors mb-8"
         >
           <ArrowLeft className="h-3.5 w-3.5" />
-          Rankings
+          Leaderboard
         </Link>
 
         <div className="flex flex-col lg:flex-row gap-12">

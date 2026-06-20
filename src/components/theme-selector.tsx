@@ -20,14 +20,14 @@ export function ThemeSelector() {
   const [theme, setTheme] = React.useState("default")
 
   React.useEffect(() => {
-    const saved = localStorage.getItem("battlerank-theme") || "default"
+    const saved = localStorage.getItem("powerscale-theme") || "default"
     setTheme(saved)
     document.documentElement.setAttribute("data-theme", saved)
   }, [])
 
   const changeTheme = (newTheme: string) => {
     setTheme(newTheme)
-    localStorage.setItem("battlerank-theme", newTheme)
+    localStorage.setItem("powerscale-theme", newTheme)
     document.documentElement.setAttribute("data-theme", newTheme)
   }
 
